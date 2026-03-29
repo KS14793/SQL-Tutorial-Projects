@@ -1,0 +1,44 @@
+
+/*
+Question: What skills are required for the top-paying data analyst jobs?
+- Use the top 10 highest-paying Data Scientist jobs from the first query
+- Add the specific skills required for these roles
+- Why? It provides a detailed look at which high-paying jobs demand certain skills, 
+    helping job seekers understand which skills to develop that align with top salaries
+*/
+
+WITH top_paying_jobs AS (
+    SELECT
+        job_id,
+        job_title,
+        salary_year_avg,
+        name AS company_name
+    FROM
+        job_postings_fact
+    LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
+    WHERE
+        job_title_short = 'Data Scientist' AND
+        job_location = 'Anywhere' AND
+        salary_year_avg IS NOT NULL
+    ORDER BY
+        salary_year_avg DESC
+    LIMIT 25
+)
+SELECT
+    top_paying_jobs.*,
+    skills_dim.skills
+FROM top_paying_jobs
+INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+ORDER BY
+    salary_year_avg DESC
+
+/*
+Here’s what stands out from the top 25 highest-paying roles:
+Python dominates with a count of 16 — clearly the backbone of data science roles.
+SQL follows with a strong count of 11, reinforcing its importance in data handling and querying.
+Spark, AWS, and Tableau each appear 7 times, showing the value of big data tools and visualization.
+TensorFlow shows up 6 times, highlighting demand for machine learning expertise.
+PyTorch appears 5 times, further confirming the importance of deep learning frameworks.
+Hadoop, Java, and Scikit-learn each have 4 mentions, indicating supporting technical skills.
+*/
