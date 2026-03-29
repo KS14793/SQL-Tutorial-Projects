@@ -6,6 +6,13 @@ Using SQL, I explored a dataset of job postings to uncover insights into top-pay
 
 Check out my SQL queries here - [Project_SQL Folder](/Project_SQL/)
 
+## Key Highlights
+
+- Identified top-paying Data Scientist roles with salaries up to $650K  
+- Analyzed the relationship between skill demand and salary across 25+ skills  
+- Discovered high-value skills that balance demand and compensation  
+- Built advanced SQL queries using joins, aggregations, and CTEs  
+
 # Background
 
 With the growing demand for data science roles, it can be challenging to identify which skills to focus on for career growth. This project was created to better understand which skills are most valuable by analyzing real-world job postings.
@@ -254,8 +261,6 @@ LIMIT 25;
 
 - **Niche Tools Deliver High Pay Despite Lower Demand:**  
   Specialized tools like *Qlik* stand out with top-tier salaries (~$164K) but relatively low demand (15 postings), suggesting that rare expertise can still command a premium in targeted roles.
-
-# What I Learned
 
 # What I Learned
 
