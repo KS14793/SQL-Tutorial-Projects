@@ -32,13 +32,3 @@ INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
-
-/*
-Here’s what stands out from the top 25 highest-paying roles:
-Python dominates with a count of 16 — clearly the backbone of data science roles.
-SQL follows with a strong count of 11, reinforcing its importance in data handling and querying.
-Spark, AWS, and Tableau each appear 7 times, showing the value of big data tools and visualization.
-TensorFlow shows up 6 times, highlighting demand for machine learning expertise.
-PyTorch appears 5 times, further confirming the importance of deep learning frameworks.
-Hadoop, Java, and Scikit-learn each have 4 mentions, indicating supporting technical skills.
-*/

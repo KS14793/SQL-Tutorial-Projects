@@ -21,20 +21,3 @@ GROUP BY
 ORDER BY
     avg_salary DESC
 LIMIT 25
-
-/* Here's a breakdown of the insights:
-Specialized & Niche Expertise Drives Top Salaries: 
-Skills like GDPR, Golang, and Solidity highlight that domain-specific 
-and less common expertise commands the highest pay, 
-as companies are willing to pay a premium for rare, business-critical capabilities.
-Strong Overlap Between Data Science and Engineering: 
-The presence of tools like Go, Rust, Airflow, Redis, and Cassandra 
-indicates that top-paying roles require not just analysis, 
-but also building and maintaining scalable systems, 
-reflecting a shift toward hybrid data + engineering roles.
-Broad Technical Versatility Across the Data Stack: 
-A wide mix of BI tools (Looker, Qlik), databases (DynamoDB, Neo4j), 
-programming languages, and AI platforms suggests that top-paying 
-data scientist roles demand proficiency across multiple layers 
-of the data ecosystem rather than a single specialization.
-*/
