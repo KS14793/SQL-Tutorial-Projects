@@ -71,7 +71,7 @@ LIMIT 25
 
 - **Strong Presence of Specialized Roles:** High-paying titles like *Quant Researcher* and advanced AI-focused roles suggest that deep domain expertise and specialization play a key role in reaching top salary levels.    
 
-![Top Paying Roles](Project_SQL/Assets/top_10_paying_jobs_dark.png)
+![Top Paying Roles](./Assets/top_10_paying_jobs_dark.png)
 
 *Bar chart visualizing the salary distribution for the top 10 highest-paying Data Scientist roles, derived from the SQL query results.*
 
@@ -117,7 +117,7 @@ ORDER BY
 
 - **Supporting Technical Skills Enhance Profiles:** Skills like *Hadoop, Java,* and *Scikit-learn* (4 mentions each) show that a well-rounded technical stack contributes to higher-paying opportunities.
 
-![Top Skill](Project_SQL/Assets/top_10_skills_dark.png)
+![Top Skill](./Assets/top_10_skills_dark.png)
 
 *Bar chart visualizing the most frequently required skills across the top-paying Data Scientist roles, derived from the SQL query results.*
 
